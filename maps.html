@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Simple Markers</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <style type="text/css">
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+        
+      }
+
+      /* Optional: Makes the sample page fill the window. */
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      function initMap() {
+        // 0.007011726999802507, 109.36097252209015
+        const myLatLng = { lat: 0.0070998, lng: 109.3608057 };
+        const map = new google.maps.Map(document.getElementById("map"), {
+          zoom: 19,
+          center: myLatLng,
+        });
+        // https://www.flaticon.com/svg/static/icons/svg/2669/2669837.svg
+        const iconBase = "https://www.flaticon.com/svg/static/icons/svg/2669/";
+		let icon = {
+		 		url: iconBase + '2669837.svg', // url
+		 		scaledSize: new google.maps.Size(50, 50), // scaled size
+		 		origin: new google.maps.Point(0,0), // origin
+		 		anchor: new google.maps.Point(0, 0) // anchor
+		 	   };
+        new google.maps.Marker({
+          position: myLatLng,
+          map,
+          title: "Fadli & Tiwi",
+          icon: icon
+        });
+      }
+    </script>
+    <div id="map" style="height: 100%;"></div>
+
+    <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDF42f7xLVAbuYuiwu_5jQ-Vn5DPWVP_qQ&callback=initMap&libraries=&v=weekly"
+      async
+    ></script>
+  </body>
+</html>

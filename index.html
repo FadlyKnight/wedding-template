@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <!-- KNIGHT WAS HERE -->
+    <!-- THEME BY FADLYKNIGHT -->
+    <!-- CREATED ON 15-MAY-2021 -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fadli & Tiwi Wedding</title>
+    
+    <link rel="stylesheet" href="vendor/css/uikit.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <script>
+        ;(function(){
+            function id(v){ return document.getElementById(v); }
+            function loadbar() {
+                var ovrl = id("overlay"),
+                    prog = id("progress"),
+                    stat = id("progstat"),
+                    img = document.images,
+                    c = 0,
+                    tot = img.length;
+                if(tot == 0) return doneLoading();
+
+                function imgLoaded(){
+                c += 1;
+                var perc = ((100/tot*c) << 0) +"%";
+                prog.style.width = perc;
+                stat.innerHTML = "Loading "+ perc;
+                if(c===tot) return doneLoading();
+                }
+                function doneLoading(){
+                ovrl.style.opacity = 0;
+                setTimeout(function(){ 
+                    ovrl.style.display = "none";
+                }, 1200);
+                }
+                for(var i=0; i<tot; i++) {
+                var tImg     = new Image();
+                tImg.onload  = imgLoaded;
+                tImg.onerror = imgLoaded;
+                tImg.src     = img[i].src;
+                }    
+            }
+            document.addEventListener('DOMContentLoaded', loadbar, false);
+            }());
+    </script>
+    <style>
+        
+        #overlay{
+        position:fixed;
+        z-index:99999;
+        top:0;
+        left:0;
+        bottom:0;
+        right:0;
+        background:rgba(0,0,0,0.9);
+        transition: 1s 0.4s;
+        }
+        #progress{
+        height:1px;
+        background:#fff;
+        position:absolute;
+        width:0;                /* will be increased by JS */
+        top:50%;
+        }
+        #progstat{
+        font-size:0.7em;
+        letter-spacing: 3px;
+        position:absolute;
+        top:50%;
+        margin-top:-40px;
+        width:100%;
+        text-align:center;
+        color:#fff;
+        }
+    </style>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DM6RZGZ01H"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-DM6RZGZ01H');
+    </script>
+    
+</head>
+<body>
+    <div id="overlay">
+        <div id="progstat"></div>
+        <div id="progress"></div>
+    </div>
+    <div class="uk-text-center fk-relative" id="home" >
+
+        <div class="fk-absolute-center"style="color: #fff;">
+            <i>Wedding Invitation</i>
+            <h1 class="fk-font-custom uk-heading-large" style="color: #fff;">Fadli  </br>&</br> Tiwi</h1>
+            <h4 style="color: #fff;">Sabtu, 22 Mei 2021</h4>
+        </div>
+
+        <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow="animation: push; ">
+
+            <ul class="uk-slideshow-items" uk-height-viewport>
+                <li>
+                    <div class="uk-position-cover uk-animation-kenburns uk-animation-reverse uk-transform-origin-center-left">
+                        <img src="img/2.jpg"  width="100%" uk-cover>        
+                        <div class="uk-overlay-primary uk-position-cover" style="background-color: rgba(0,0,0,0.5);"></div>
+                    </div>
+                </li>
+                <li>
+                    <div class="uk-position-cover uk-animation-kenburns uk-animation-reverse uk-transform-origin-top-right">
+                        <img src="img/3.jpg"  width="100%" uk-cover>        
+                        <div class="uk-overlay-primary uk-position-cover" style="background-color: rgba(0,0,0,0.5);"></div>
+                    </div>
+                </li>
+                <li>
+                    <div class="uk-position-cover uk-animation-kenburns uk-animation-reverse uk-transform-origin-bottom-left">
+                        <img src="img/prewedd/IMG_9054.jpg" width="100%" uk-cover>        
+                        <div class="uk-overlay-primary uk-position-cover" style="background-color: rgba(0,0,0,0.5);"></div>
+                    </div>
+                </li>
+            </ul>
+        
+            <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+            <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+        
+        </div>
+        
+    </div>
+    <div uk-grid>
+        <div class="uk-width-1-2@l uk-width-1-1@s">
+            <div class="uk-background-cover uk-height-medium uk-panel uk-flex uk-flex-center uk-flex-middle" 
+                uk-scrollspy="cls: uk-animation-slide-left; repeat: true; delay: 500"
+                style="
+                        min-height: calc(100%);
+                        background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('img/prewedd/IMG_9257.jpg');
+                        background-size: cover;
+                        height: 400px;
+                        background-position: center;"></div>
+        </div>
+        <div class="uk-width-1-2@l uk-width-1-1@s uk-margin-large-top uk-text-center">
+            <div class="uk-card" >
+                <div class="uk-padding-small" style="padding: 10px;" uk-height-viewport>
+                    <div class="fk-font-custom" uk-scrollspy="target: > h1,h2,h4,p; cls: uk-animation-fade; repeat: true; delay: 500">
+                        <h1 class="fk-font-custom uk-heading-medium">Muhammad Syarif Fadli</h1>
+                        <p>Anak ke 4 dari Bapak Yusni Hamsyah M. Yunus dan Ibu Siti Rohani</p>
+                        <h2 class="fk-font-custom uk-heading-medium">&</h2>
+                        <h1 class="fk-font-custom uk-heading-medium">Nur Rahmi Pratiwi</h1>
+                        <p>Anak tunggal dari Bapak Oscar (alm) dan Ibu Widi Astuty, S.Pd.I</p>                        
+                    </div>
+                    <div class="uk-grid-small uk-child-width-auto uk-margin-large-top uk-text-center uk-text-small"
+                        uk-scrollspy="cls: uk-animation-fade; repeat: true" 
+                        uk-grid 
+                        uk-countdown="date: 2021-05-22T09:00:00+07:00"
+                        style="place-content: center;">
+                        <div>
+                            <div class="fk-font-custom uk-countdown-number uk-countdown-days"></div>
+                            <div class="uk-countdown-label uk-margin-small uk-text-center uk-visible@s">Hari</div>
+                        </div>
+                        <div class="uk-countdown-separator uk-heading-large">:</div>
+                        <div>
+                            <div class="fk-font-custom uk-countdown-number uk-countdown-hours"></div>
+                            <div class="uk-countdown-label uk-margin-small uk-text-center uk-visible@s">Jam</div>
+                        </div>
+                        <div class="uk-countdown-separator uk-heading-large">:</div>
+                        <div>
+                            <div class="fk-font-custom uk-countdown-number uk-countdown-minutes"></div>
+                            <div class="uk-countdown-label uk-margin-small uk-text-center uk-visible@s">Menit</div>
+                        </div>
+                        <div class="uk-countdown-separator uk-heading-large">:</div>
+                        <div>
+                            <div class="fk-font-custom uk-countdown-number uk-countdown-seconds"></div>
+                            <div class="uk-countdown-label uk-margin-small uk-text-center uk-visible@s">Detik</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="uk-container uk-container-center">
+        <div class="uk-text-center uk-margin-large-top uk-margin-large-bottom">
+            <h1 class="fk-font-custom uk-heading-small">Bismillah</h1>
+            <h2>وَمِنْ آيَاتِهِ أَنْ خَلَقَ لَكُم مِّنْ أَنفُسِكُمْ أَزْوَاجاً لِّتَسْكُنُوا إِلَيْهَا وَجَعَلَ بَيْنَكُم مَّوَدَّةً وَرَحْمَةً إِنَّ فِي ذَلِكَ لَآيَاتٍ لِّقَوْمٍ يَتَفَكَّرُونَ</h2>
+            <p class="fk-font-custom">“Dan di antara tanda-tanda (kebesaran)-Nya ialah Dia menciptakan pasangan-pasangan untukmu dari jenismu sendiri,
+                agar kamu cenderung dan merasa tenteram kepadanya, dan Dia menjadikan di antaramu rasa kasih dan sayang.
+                Sungguh, pada yang demikian itu benar-benar terdapat tanda-tanda (kebesaran Allah) bagi kaum yang berpikir.”
+                <br>
+                ( QS. Ar-Rum 21 )</p>
+        </div>
+    </div>
+    
+    <div id="gallery" uk-slider>
+
+        <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
+
+            <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-4@s uk-child-width-1-6@m">
+                <li>
+                    <img src="img/galleri-slide/1.jpg" alt="">
+                    <div class="uk-overlay-primary uk-position-cover" style="background-color: rgba(0,0,0,0.3);"></div>
+                </li>
+                <li>
+                    <img src="img/galleri-slide/2.jpg" alt="">
+                    <div class="uk-overlay-primary uk-position-cover" style="background-color: rgba(0,0,0,0.3);"></div>
+                </li>
+                <li>
+                    <img src="img/galleri-slide/3.jpg" alt="">
+                    <div class="uk-overlay-primary uk-position-cover" style="background-color: rgba(0,0,0,0.3);"></div>
+                </li>
+                <li>
+                    <img src="img/galleri-slide/4.jpg" alt="">
+                    <div class="uk-overlay-primary uk-position-cover" style="background-color: rgba(0,0,0,0.3);"></div>
+                </li>
+                <li>
+                    <img src="img/galleri-slide/5.jpg" alt="">
+                    <div class="uk-overlay-primary uk-position-cover" style="background-color: rgba(0,0,0,0.3);"></div>
+                </li>
+                <li>
+                    <img src="img/galleri-slide/6.jpg" alt="">
+                    <div class="uk-overlay-primary uk-position-cover" style="background-color: rgba(0,0,0,0.3);"></div>
+                </li>
+                <li>
+                    <img src="img/galleri-slide/7.jpg" alt="">
+                    <div class="uk-overlay-primary uk-position-cover" style="background-color: rgba(0,0,0,0.3);"></div>
+                </li>
+                <li>
+                    <img src="img/galleri-slide/8.jpg" alt="">
+                    <div class="uk-overlay-primary uk-position-cover" style="background-color: rgba(0,0,0,0.3);"></div>
+                </li>
+                <li>
+                    <img src="img/galleri-slide/9.jpg" alt="">
+                    <div class="uk-overlay-primary uk-position-cover" style="background-color: rgba(0,0,0,0.3);"></div>
+                </li>
+                <li>
+                    <img src="img/galleri-slide/10.jpg" alt="">
+                    <div class="uk-overlay-primary uk-position-cover" style="background-color: rgba(0,0,0,0.3);"></div>
+                </li>
+            </ul>
+
+            <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+            <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+
+        </div>
+    </div>
+    <div class="uk-text-center uk-margin-small-top">
+        <a href="#" onclick="alert('Galeri Belum Tersedia')" class="uk-button uk-button-secondary uk-border-rounded">Lihat Lebih Banyak</a>
+    </div>
+
+    <div class="uk-container uk-container-center">
+        <div id="message" uk-grid class="">
+            <div class="uk-width-1-2@l uk-width-1-1@s uk-margin-large-top uk-margin-large-bottom ">
+                <form class="uk-form-stacked" id="formPesan">
+        
+                    <div class="uk-margin">
+                        <label class="uk-form-label" for="form-stacked-text">Nama</label>
+                        <div class="uk-form-controls">
+                            <input class="uk-input" required name="username" id="username" type="text" placeholder="Masukkan Nama">
+                        </div>
+                    </div>
+                
+                    <div class="uk-margin">
+                        <label class="uk-form-label" for="form-stacked-text">Email</label>
+                        <div class="uk-form-controls">
+                            <input class="uk-input" required name="email" id="email" type="email" placeholder="Masukkan Email">
+                        </div>
+                    </div>
+                
+                    <div class="uk-margin">
+                        <label class="uk-form-label" for="form-stacked-text">Pesan / Ucapan</label>
+                        <div class="uk-form-controls">
+                            <textarea required name="pesan" id="pesan" class="uk-textarea"></textarea>
+                        </div>
+                    </div>
+                    <div class="uk-margin">
+                        <button type="submit" class="uk-button uk-button-secondary uk-border-rounded">Kirim</button>
+                    </div>
+                </form>
+            </div>
+            <div class="uk-width-1-2@l uk-width-1-1@s uk-margin-medium-top">
+                <div style="max-height: 400px;" id="comment" class="uk-overflow-auto">
+                    <article class="uk-comment uk-comment-primary">
+                        <header class="uk-comment-header">
+                            <div class="uk-grid-medium uk-flex-middle" uk-grid>
+                                <div class="uk-width-auto">
+                                    <img class="uk-comment-avatar" src="img/user.png" width="80" height="80" alt="">
+                                </div>
+                                <div class="uk-width-expand">
+                                    <h4 class="uk-comment-title uk-margin-remove"><a class="uk-link-reset" href="#">Author</a></h4>
+                                    <ul class="uk-comment-meta uk-subnav uk-subnav-divider uk-margin-remove-top">
+                                        <li><a href="#">12 days ago</a></li>
+                                        <!-- <li><a href="#">Reply</a></li> -->
+                                    </ul>
+                                </div>
+                            </div>
+                        </header>
+                        <div class="uk-comment-body uk-text-small">
+                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <div style="height: 80px;"></div>
+    <!-- Bottom Navbar -->
+    <div class="uk-position-relative uk-width-1-1">
+        <div class="" style="width:100%; position: fixed;bottom: 0;background-color: rgba(255,255,255,0.4);    box-shadow: 0 5px 15px rgb(0 0 0 / 40%);">
+            <div class="uk-container-xlarge uk-flex uk-flex-middle uk-flex-center uk-margin-top uk-margin-bottom uk-text-center uk-flex-around" >
+                <div>
+                    <a href="#home" uk-scroll uk-icon="icon: home"></a>
+                    <br>
+                    Home
+                </div>
+                <div>
+                    <a href="#gallery" uk-scroll uk-icon="icon: heart"></a>
+                    <br>
+                    Galeri
+                </div>
+                <div>
+                    <a href="#location" uk-toggle uk-scroll uk-icon="icon: location"></a>
+                    <br>
+                    Lokasi
+                </div>
+                <div>
+                    <a href="#message" uk-scroll uk-icon="icon: mail"></a>
+                    <br>
+                    Pesan
+                </div>
+                <div>
+                    <a href="#info" uk-scroll uk-icon="icon: info"></a>
+                    <br>
+                    Info
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- MODAL LOKASI -->
+    <div id="location" class="uk-flex-top" uk-modal>
+        <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
+
+            <button class="uk-modal-close-default" type="button" uk-close></button>
+
+            <div style="height: 400px;" class="">
+                <script>
+                    function initMap() {
+                      // 0.007011726999802507, 109.36097252209015
+                      const myLatLng = { lat: 0.0070998, lng: 109.3608057 };
+                      const map = new google.maps.Map(document.getElementById("map"), {
+                        zoom: 19,
+                        center: myLatLng,
+                      });
+                      // https://www.flaticon.com/svg/static/icons/svg/2669/2669837.svg
+                      const iconBase = "https://www.flaticon.com/svg/static/icons/svg/2669/";
+                      let icon = {
+                               url: iconBase + '2669837.svg', // url
+                               scaledSize: new google.maps.Size(50, 50), // scaled size
+                               origin: new google.maps.Point(0,0), // origin
+                               anchor: new google.maps.Point(0, 0) // anchor
+                              };
+                      let marker = new google.maps.Marker({
+                        position: myLatLng,
+                        map,
+                        title: "Fadli & Tiwi",
+                        icon: icon
+                      });
+                      var contentString = 
+                        '<div class="content">'+ 
+                        '<h5>Acara Pernikahan</h5>'+
+                        '<p>Fadli & Tiwi</p>'+
+                        '<a href="https://goo.gl/maps/XnyC999FbZM8GDu17"><b class="firstHeading">Lihat Google Maps</b></a><br>'+
+                        '</div></div>';
+                        var infowindow = new google.maps.InfoWindow({ content: contentString });
+
+                      marker.addListener('click', function () {
+                            infowindow.open(map, marker);
+                        });
+
+                    }
+                  </script>
+                  <div id="map" style="height: 100%;"></div>
+                  <!-- <div class="uk-text-center uk-margin-small-top">
+                      <a href="https://goo.gl/maps/XnyC999FbZM8GDu17" class="uk-button uk-button-secondary uk-border-rounded">Lihat Gmaps</a>
+                  </div> -->
+
+                  <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+                  <script
+                    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDF42f7xLVAbuYuiwu_5jQ-Vn5DPWVP_qQ&callback=initMap&libraries=&v=weekly"
+                    async
+                  ></script>
+            </div>
+        </div>
+    </div>
+
+        <!-- JS -->
+        <script src="js/jquery.min.js"></script>
+    
+        <!-- UIkit JS -->
+        <script src="vendor/js/uikit.min.js"></script>
+        <script src="vendor/js/uikit-icons.min.js"></script>
+
+    
+
+    <script>
+        var slider = UIkit.slider('.gallery', { center:true,infinite: false });
+    </script>
+
+    <!-- FIREBASE -->
+    <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-app.js"></script>
+
+    <!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
+    <!-- <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-analytics.js"></script> -->
+  
+    <!-- Add Firebase products that you want to use -->
+    <!-- <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-auth.js"></script> -->
+    <!-- <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-firestore.js"></script> -->
+    <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-database.js"></script>
+  
+    <script src="js/firebase.js"></script>
+    <script>
+        var today = new Date();
+        var dateOnly = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate()
+        var minutes = (today.getMinutes()<10?'0':'') + today.getMinutes();
+        var hours = (today.getHours()<10?'0':'') + today.getHours();
+        var timeOnly = hours + ":" + minutes + ":" + today.getSeconds()
+        var date = dateOnly+' '+timeOnly;
+        var comment = $('#comment');
+        
+        function htmlEncode ( html )
+        {
+            html = $.trim(html);
+            return html.replace(/[&"'\<\>]/g, function(c) 
+            {
+                switch (c) 
+                {
+                    case "&":
+                        return "&amp;";
+                    case "'":
+                        return "&#39;";
+                    case '"':
+                        return "&quot;";
+                    case "<":
+                        return "&lt;";
+                    default:
+                        return "&gt;";
+                }
+            });
+        };
+
+        function ajaxCall(callback){
+            $.ajax({
+                method: "GET",
+                url: "https://json.geoiplookup.io/?callback=?",
+                dataType: 'json',
+                success: callback
+            });
+        }
+            
+        function writePesan(id, name, email, pesan, ip, metaData) {
+            firebase.database().ref('id/'+id).set({
+                time : date,
+                content : {
+                    username: name,
+                    email: email,
+                    pesan : pesan,
+                    ip : ip,
+                    meta: metaData,
+                    timestamp : date
+                },
+            });
+        }
+
+        function checkVal(text)
+        {
+            var bad_words = new Array("anjing","bansgat","babi");
+            var error=0;
+
+            for(var i=0;i<bad_words.length;i++)
+            {
+                var val=bad_words[i];
+                if((text.toLowerCase()).indexOf(val.toString())>-1)
+                {
+                    error=error+1;
+                }
+            }
+                
+            if(error>0) {
+                throw new Error("Something went badly wrong!");
+            } 
+        }
+        
+        function successInput() {
+            
+        }
+
+        $(document).ready(function() {
+            $('form#formPesan').on('submit', function (e) {
+                let username = $('#username').val();
+                let email = $('#email').val();
+                let pesan = $('#pesan').val();
+                
+                if ( username.match( /(anjing|bangsat|babi|kontol|kimak|asu|goblok|ngentot|<|>)/ ) ||
+                        email.match( /(anjing|bangsat|babi|kontol|kimak|asu|goblok|ngentot|<|>)/ ) || 
+                        pesan.match( /(anjing|bangsat|babi|kontol|kimak|asu|goblok|ngentot|<|>)/ )
+                ) {
+                    alert('Forbidden Words')
+                    e.preventDefault()
+                } else {
+                    ajaxCall(result => {
+                        writePesan(Date.now(),username,email, pesan, result.ip, JSON.stringify(result,null,2))
+                        }) 
+                    e.preventDefault()
+                    UIkit.notification({message: '<span uk-icon=\'icon: check\'></span> Terimakasih Ucapan / Doa Anda'})
+
+                    let prependHmtl = `
+                    <article class="uk-comment uk-comment-primary">
+                                <header class="uk-comment-header">
+                                    <div class="uk-grid-medium uk-flex-middle" uk-grid>
+                                        <div class="uk-width-auto">
+                                            <img class="uk-comment-avatar" src="img/user.png" width="80" height="80" alt="">
+                                        </div>
+                                        <div class="uk-width-expand">
+                                            <h4 class="uk-comment-title uk-margin-remove"><a class="uk-link-reset" href="#">${username}</a></h4>
+                                            <ul class="uk-comment-meta uk-subnav uk-subnav-divider uk-margin-remove-top">
+                                                <li><a href="#">${date}</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </header>
+                                <div class="uk-comment-body">
+                                    <p>${pesan}</p>
+                                </div>
+                            </article>`;
+                    comment.prepend(prependHmtl).fadeIn()
+                    console.log('success');
+                }
+                
+            });
+        });
+
+        const dbRef = firebase.database().ref('id');
+
+        dbRef.orderByKey().get().then((snapshot) => {
+            if (snapshot.exists()) {
+                let data = snapshot.val();                
+                let result = [];
+                for(var d in data){
+                    let content = data[d].content
+                    content.time = data[d].time
+                    result.push(content);
+                }
+                function renderResult(result) {
+                    let html = result.map(r => {
+                        return `
+                        <article class="uk-comment uk-comment-primary">
+                            <header class="uk-comment-header">
+                                <div class="uk-grid-medium uk-flex-middle" uk-grid>
+                                    <div class="uk-width-auto">
+                                        <img class="uk-comment-avatar" src="img/user.png" width="80" height="80" alt="">
+                                    </div> 
+                                    <div class="uk-width-expand">
+                                        <h4 class="uk-comment-title uk-margin-remove"><a class="uk-link-reset" href="#">${htmlEncode(r.username)}</a></h4>
+                                        <ul class="uk-comment-meta uk-subnav uk-subnav-divider uk-margin-remove-top">
+                                            <li><a href="#">${r.time}</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </header>
+                            <div class="uk-comment-body">
+                                <p>${ htmlEncode(r.pesan)}</p>
+                            </div>
+                        </article>
+                        `
+                    }).join(' ');
+                    comment.html(html);
+                }
+                function sortResults(prop, asc) {
+                    result.sort(function(a, b) {
+                        if (asc) {
+                            return (a[prop] > b[prop]) ? 1 : ((a[prop] < b[prop]) ? -1 : 0);
+                        } else {
+                            return (b[prop] > a[prop]) ? 1 : ((b[prop] < a[prop]) ? -1 : 0);
+                        }
+                    });
+                    renderResult(result)
+                }
+                sortResults('time', false)
+            } else {
+                console.log("No data available");
+                comment.html('Tidak Ada Pesan');
+            }
+        }).catch((error) => {
+            console.error(error);
+        });
+    </script>
+
+</body>
+</html>
