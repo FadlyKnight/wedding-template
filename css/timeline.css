@@ -1,0 +1,131 @@
+
+/* Timeline Element */
+
+.tw-timeline-container {
+    position: relative;
+    padding: 60px 0;
+  }
+  
+  .tw-padding.large,
+  .tw-timeline-container.large {
+    padding: 120px 0;
+  }
+  
+  .tw-timeline-container:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 6px;
+    height: 100%;
+    width: 1px;
+    background: #e5e5e5;
+  }
+  
+  .tw-timeline-container .tw-timeline-block {
+    position: relative;
+    margin: 60px 0;
+  }
+  
+  .tw-timeline-container .tw-timeline-block:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  .tw-timeline-container .tw-timeline-block:first-child {
+    margin-top: 0;
+  }
+  
+  .tw-timeline-container .tw-timeline-block:last-child {
+    margin-bottom: 0;
+  }
+  
+  .tw-timeline-container .tw-timeline-block .tw-timeline-circle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 9px;
+    height: 9px;
+    border: 2px solid #151515;
+    background: #fff;
+    border-radius: 50%;
+  }
+  
+  .tw-timeline-container .tw-timeline-block .tw-timeline-content {
+    padding: 0 35px;
+  }
+  
+  .tw-timeline-container .tw-timeline-block .tw-timeline-content h3 {
+    font-size: 16px;
+    line-height: 1;
+  }
+  
+  .tw-timeline-container .tw-timeline-block .tw-timeline-content:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  .tw-timeline-container.right .tw-timeline-block {
+    text-align: right;
+  }
+  
+  .tw-timeline-container.right:before {
+    left: auto;
+    right: 6px;
+  }
+  
+  .tw-timeline-container.right .tw-timeline-block .tw-timeline-circle {
+    left: auto;
+    right: 0;
+  }
+  
+  .tw-timeline-container .tw-timeline-info {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  
+  /* Style 2 */
+  
+  .tw-timeline-container.style-2 .tw-timeline-block .tw-timeline-content {
+    padding-left: 35px;
+  }
+  
+  @media only screen and (min-width: 1170px) {
+    .tw-timeline-container.normal .tw-timeline-block:nth-child(even) .tw-timeline-content {
+      float: right;
+      padding-right: 0;
+    }
+    .tw-timeline-container.normal .tw-timeline-block:nth-child(odd) .tw-timeline-content {
+      text-align: right;
+      padding-left: 0;
+    }
+    .tw-timeline-container.normal .tw-timeline-block .tw-timeline-content {
+      margin-left: 0;
+      width: 50%;
+      box-sizing: border-box;
+    }
+    .tw-timeline-container.normal .tw-timeline-block .tw-timeline-circle {
+      left: 50%;
+      margin-left: -5.5px;
+    }
+    .tw-timeline-container .tw-timeline-info {
+      display: block;
+    }
+    .tw-timeline-container.normal:before {
+      left: 50%;
+    }
+    .tw-timeline-container.style-2:before {
+      left: 24%;
+    }
+    .tw-timeline-container.style-2 .tw-timeline-block .tw-timeline-circle {
+      left: 23.4%;
+    }
+    .tw-timeline-container.style-2 .tw-timeline-block .tw-timeline-content {
+      padding-left: 30%;
+    }
+  }
+  
+  /* Open Job Element */
